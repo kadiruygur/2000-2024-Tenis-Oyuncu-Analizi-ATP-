@@ -37,8 +37,3 @@ turnuva_türü_sayilari.plot(kind='bar', stacked=True, title="Top 10 Oyuncunun K
 plt.show()
 
 
-
-for player in top_10_players:
-    player_data = df[(df['Winner'] == player) & (df['Tournament'].isin(ilgili_turnuvalar))]
-    turnuva_türü_sayilari[player] = player_data['Tournament'].value_counts()
-
